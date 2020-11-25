@@ -1,0 +1,562 @@
+/* Fonts ***********************************************/
+
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Asap:ital@1&display=swap");
+
+/* All pages *******************************************/
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f6f6f6;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link,
+a:visited {
+  color: #4e89ae;
+}
+
+/* Footer **************************************************/
+.back-home {
+  /* background-color: #f5f1da; */
+  padding-top: 20px;
+  padding-bottom: 30px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.back-button {
+  border: 1px solid #dadce0;
+  background-color: transparent;
+  border-radius: 4px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: #777;
+  font-size: 15px;
+  size: 50px;
+  padding: 3px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.back-button:hover {
+  box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.37);
+  cursor: pointer;
+}
+
+/* ================================================================================================================ */
+
+/* ================================================================================================================= */
+
+/* Main Page     SECTION */
+
+/* Section Greeting ************************************************/
+
+.greeting-container {
+  display: flex;
+  background-image: url("images/bg-img2.jpg");
+  flex-direction: column;
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+  margin-top: 0;
+}
+
+.greeting {
+  color: #332e29 !important;
+  margin-top: 44vh;
+  margin-left: 6vw;
+}
+
+.greeting-h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 3rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.my-name {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 4px;
+  margin-top: 0;
+}
+
+.shortcuts {
+  margin-top: 5vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+a.shortcut {
+  margin: 35px;
+  color: #333333;
+  font-size: x-large;
+}
+
+/* Hover */
+
+.shortcut:hover{
+  color: #111111;
+}
+
+
+
+/* Section About *****************************************************/
+
+.about-container {
+  min-height: 100vh;
+  background-color: #dddddd;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15vw;
+  font-family: "Asap", sans-serif;
+  font-size: larger;
+  color: #757575;
+  /* text-shadow: 1px 1px #888888; */
+}
+
+.about-img-container {
+  display: flex;
+  align-items: center;
+}
+
+/* .about-img {
+    margin-top: 90px;
+    padding: 10px; 
+    
+} */
+
+.about-text {
+  padding: 3vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: larger;
+}
+
+.about-title {
+  text-align: center;
+}
+
+/* Section Projects **************************************************/
+
+.projects-continer {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(164, 168, 170);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-image: url("images/projects-bg.jpg");
+  background-size: cover;
+  font-family: "Cambria", Georgia, Times, "Times New Roman", serif;
+  color: #555555;
+}
+
+.projects-title {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  height: 440px;
+  border: 1px solid #e0e0e0;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  margin: 0.9rem;
+  transition: 0.3s;
+  padding: 0.5em 0.5em;
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-img {
+  height: 100px;
+}
+
+.card-head {
+  border-radius: 5px;
+  text-align: center;
+}
+
+.card-body {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-around;
+}
+.card-btn {
+  font-size: 30px;
+  color: #666666;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px 30px;
+  opacity: 0.2;
+}
+
+
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+} 
+
+.card:hover .card-btn {
+  opacity: 0.4;
+}
+
+.card .card-btn:hover {
+  opacity: 1;
+}
+
+.hide-btn {
+  visibility: hidden;
+}
+
+
+/* Section Contact Me ************************************************/
+
+.contact-me-container {
+  background-image: url("images/contact-me-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.contact-me-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.contact-me-title:hover {
+  color: #2C678C;
+   /* #3D789D; */
+  
+}
+
+/* @media (max-height: 500px){
+  .greeting {
+    margin-top: 30vh;
+  }
+} */
+
+
+
+/* @media ************************************************************/
+
+@media (max-width: 750px) {
+  /* Greeting */
+  .greeting {
+    margin-left: 1rem;
+  }
+  .greeting-h1 {
+    font-size: 3rem;
+  }
+  .my-name {
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+  a.shortcut {
+    font-size: x-large;
+    margin: 30px;
+  }
+
+  /* About */
+  .about-container {
+    flex-direction: column-reverse;
+    font-size: larger;
+    padding: 5vw;
+  }
+  .about-img-container {
+    display: flex;
+    justify-content: center;
+  }
+  .about-img {
+    width: 200px;
+    padding: 5px;
+  }
+  .about-text {
+    margin: 5px;
+  }
+  /* Projects */
+  .cards-grid {
+    grid-template-columns: 300px;
+  }
+}
+
+@media (max-width: 1400px) and (min-width: 750px) {
+  /* Greeting */
+  .greeting {
+    margin-left: 5rem;
+  }
+  .greeting-h1 {
+    font-size: 4rem;
+  }
+  .my-name {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+  }
+
+  /* About */
+  .about-container {
+    /* flex-direction: column-reverse; */
+    font-size: larger;
+  }
+  .about-img {
+    width: 220px;
+    padding: 5px;
+  }
+  /* Projects */
+  .cards-grid {
+    grid-template-columns: 300px 300px;
+  }
+}
+
+@media (min-width: 1400px) {
+  /* Greeting */
+  .greeting {
+    margin-left: 17vw;
+  }
+  .greeting-h1 {
+    font-size: 5rem;
+  }
+  .my-name {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+  }
+
+  a.shortcut {
+    font-size: x-large;
+  }
+
+  /* About */
+  /* .about-container {
+    
+    font-size: larger;
+  } */
+
+  .about-img {
+    width: 220px;
+    padding: 5px;
+  }
+
+  /* Contact */
+  .contact-me-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+}
+
+/* ======================================================================================================== */
+
+/* ======================================================================================================== */
+
+/* Contact Me page SECTION */
+
+.contact-background {
+  background-image: url("images/contact-bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  min-height: 550px;
+  height: 100vh;
+  padding-top: 50px;
+}
+
+.contact-container {
+  display: flex;
+  font-family: "Roboto", arial, sans-serif;
+  color: #555555;
+  /* align-items: center; */
+  margin-top: 4vh;
+  justify-content: center;
+  font-size: larger;
+  margin: 3vw;
+}
+
+.form-container {
+  margin: 0 3vw;
+}
+
+.field-transparent {
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 0px;
+  font-family: "Roboto", arial, sans-serif;
+  color: #444444;
+  font-size: large;
+  width: 400px;
+  border: solid;
+  border-width: 0px 0px 3px 0px;
+  border-color: rgba(0, 0, 0, 0);
+}
+
+.field-transparent:focus {
+  border-color: rgba(88, 88, 88, 1);
+}
+
+.your-message {
+  background-color: rgba(0, 0, 0, 0.05);
+  width: 400px;
+  border: 0px;
+  padding: 30px;
+  font-family: "Roboto", arial, sans-serif;
+  color: #444444;
+  font-size: large;
+}
+
+.your-message:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.send-btn {
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 0px;
+  border-radius: 4px;
+  font-family: "Open Sans", sans-serif;
+  font-size: large;
+  font-weight: 600;
+  color: #777777;
+  margin-top: 5px;
+  padding: 4px 10px;
+  cursor: pointer;
+  
+}
+
+.send-btn:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #555555;
+}
+
+@media (max-width: 860px) {
+  .contact-background {
+    min-height: 850px;
+    padding-top: 10px;
+  }
+  .contact-container {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0;
+    font-size: medium;
+  }
+  .contact-info {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .field-transparent {
+    width: 345px;
+  }
+  .form-container {
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+  }
+  .your-message {
+    width: 345px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .contact-info {
+    margin-right: 0px;
+    margin-left: 100px;
+  }
+  .form-container {
+    margin-left: 120px;
+  }
+  .field-transparent {
+    width: 345px;
+  }
+  .field-transparent {
+    width: 500px;
+  }
+  .your-message {
+    width: 500px;
+  }
+
+  .contact-container {
+    font-size: x-large;
+  }
+}
+
+/* ==================================================================================================== */
+
+/* ===================================================================================================== */
+
+/* The Code Page SECTION */
+
+.source-body {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    flex-direction: column;
+    margin-top: 0;
+    color: #3e978b;
+    font-family: 'Libre Baskerville', serif;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FAFAFA;
+}
+
+.page-container {
+  padding: 30px;
+  margin-bottom: 60px;
+  background-color: #d7d7d7;
+  border-radius: 6px;
+}
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.title-container {
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.page-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.nice-code {
+  font-family: "Fira Code", monospace;
+  font-size: small;
+  color: #565d47;
+}

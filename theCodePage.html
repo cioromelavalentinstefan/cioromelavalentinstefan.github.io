@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Cioromela Valentin Stefan">
+    <title>SC Cioromela Valentin Stefan</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/favicon.ico">
+
+</head>
+
+<body class="source-body">
+    <header>
+        <div class="title-container">
+            <h1 class="page-title">Source Code</h1>
+            <p>This is the source code of the webside including css and javascript files.</p>
+            <p>InnerHtml for displaying the souce code was transformed with another little project of mine,
+              Html Converter, you can find it on my page.</p>
+        </div>
+    </header>
+
+<!-- Html main page ================================================================================================-->
+    <div class="page-container">
+        <h3 class="page-title">Main page</h3>
+        <pre>
+            <code class="nice-code">
+&lt;!DOCTYPE html&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;meta name=&quot;author&quot; content=&quot;Cioromela Valentin Stefan&quot;&gt;
+    &lt;title&gt;Cioromela Valentin Stefan&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;styles.css&quot;&gt;
+    &lt;link rel=&quot;icon&quot; href=&quot;images/favicon.ico&quot;&gt;
+    &lt;link href=&quot;fontawesome-free-5.15.1-web/css/all.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;!-- ///Greeting section///////////////////////////// --&gt;
+    &lt;header&gt;
+        &lt;section class=&quot;section-greeting&quot; id=&quot;greeting-id&quot;&gt;
+            &lt;div class=&quot;greeting-container&quot;&gt;
+
+                &lt;div class=&quot;greeting&quot;&gt;
+                    &lt;h1 class=&quot;greeting-h1&quot;&gt;I&apos;m a Programmer&lt;/h1&gt;
+                    &lt;h5 class=&quot;my-name&quot;&gt;CIOROMELA VALENTIN ȘTEFAN&lt;/h5&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;shortcuts&quot;&gt;
+                    &lt;a class=&quot;shortcut&quot; href=&quot;#about&quot;&gt;Me&lt;/a&gt;
+                    &lt;a class=&quot;shortcut&quot; href=&quot;#projects&quot;&gt;Projects&lt;/a&gt;
+                    &lt;a class=&quot;shortcut&quot; href=&quot;contactMe.html&quot;&gt;Contact&lt;/a&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;shortcuts&quot;&gt;
+                    &lt;a class=&quot;shortcut&quot; href=&quot;forDownload\Ciromela_Valentin_Ștefan.pdf&quot; download&gt;CV&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/section&gt;
+    &lt;/header&gt;
+
+    &lt;!-- ///About section//////////////////////////////// --&gt;
+    &lt;section class=&quot;section-about&quot; &gt;
+        &lt;div class=&quot;about-container&quot; id=&quot;about&quot;&gt;
+
+            &lt;div class=&quot;about-text&quot;&gt;
+
+                &lt;h3 class=&quot;about-title&quot;&gt;Hi, I&apos;m Ștefan.&lt;/h3&gt;
+
+                &lt;p class=&quot;about-story&quot;&gt;
+                    I am in a quest of finding a job that feeds my passion for pogramming.
+                &lt;/p&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;about-img-container&quot;&gt;
+                &lt;img class=&quot;about-img&quot; src=&quot;images/profilePic4-nobg.png&quot;&gt;
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+    &lt;/section&gt;
+
+&lt;!-- ///Projects section///////////////////////////// --&gt;
+    &lt;seltion class=&quot;section-projects&quot; &gt;
+        &lt;div class=&quot;projects-continer&quot; id=&quot;projects&quot;&gt;
+            &lt;h2 class=&quot;projects-title&quot; &gt;My projects&lt;/h2&gt;
+
+            &lt;div class=&quot;cards-grid&quot;&gt;
+
+                &lt;div class=&quot;source-code card&quot; id=&quot;web-code&quot;&gt;
+                    &lt;div class=&quot;card-head&quot;&gt;
+                        &lt;img class=&quot;card-img&quot; src=&quot;images/card-img.svg&quot;&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;card-body&quot;&gt;
+                        &lt;h3&gt;The website Source Code&lt;/h3&gt;
+                        &lt;p&gt;This website was written in plain HTML, CSS and Javascript.&lt;/p&gt;
+                     &lt;/div&gt;
+                     &lt;div class=&quot;card-footer&quot;&gt;
+                        &lt;button class=&quot;card-btn&quot;  onclick=&quot;goTo(&apos;theCodePage.html&apos;)&quot;&gt;&lt;i class=&quot;fas fa-code fa-lg&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+                        &lt;button class=&quot;card-btn hide-btn&quot;  onclick=&quot;goTo()&quot;&gt;&lt;i class=&quot;fas fa-angle-double-right fa-lg&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+                     &lt;/div&gt;
+                &lt;/div&gt;
+
+
+                &lt;div class=&quot;convert-html card&quot; id=&quot;html&quot;&gt;
+                    &lt;div class=&quot;card-head&quot;&gt;
+                        &lt;img class=&quot;card-img&quot; src=&quot;images/card-img.svg&quot;&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;card-body&quot;&gt;
+                        &lt;h3&gt;Displaying HTML&lt;/h3&gt;
+                        &lt;p&gt;This little web app will convert the characters &amp;, &amp;#60 , &gt; , &quot; , &apos; in a string to their coresponding html entities name.&lt;/p&gt;
+                        &lt;p&gt;This app was written in plain HTML, CSS and Javascript&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;card-footer&quot;&gt;
+                        &lt;button class=&quot;card-btn&quot;  onclick=&quot;goTo(&apos;HtmlConverter/htmlConverterSoucreCode.html&apos;)&quot;&gt;&lt;i class=&quot;fas fa-code fa-lg&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+                        &lt;button class=&quot;card-btn&quot;  onclick=&quot;goTo(&apos;HtmlConverter/htmlConverter.html&apos;)&quot;&gt;&lt;i class=&quot;fas fa-angle-double-right fa-lg&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+                     &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;gate-ap card&quot; id=&quot;piano&quot;&gt;
+                    &lt;div class=&quot;card-head&quot;&gt;
+                        &lt;img class=&quot;card-img&quot; src=&quot;images/card-img.svg&quot;&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;card-body&quot;&gt;
+                        &lt;h3&gt;Piano&lt;/h3&gt;
+                        &lt;p&gt;This app was written in plain HTML, CSS and Javascript.&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;card-footer&quot;&gt;
+                        &lt;button class=&quot;card-btn&quot;  onclick=&quot;goTo(&apos;Piano/pianoSourceCode.html&apos;)&quot;&gt;&lt;i class=&quot;fas fa-code fa-lg&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+                        &lt;button class=&quot;card-btn&quot;  onclick=&quot;goTo(&apos;Piano/piano.html&apos;)&quot;&gt;&lt;i class=&quot;fas fa-angle-double-right fa-lg&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+                     &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;gate-ap card&quot; id=&quot;dice&quot;&gt;
+                    &lt;div class=&quot;card-head&quot;&gt;
+                        &lt;img class=&quot;card-img&quot; src=&quot;images/card-img.svg&quot;&gt; 
+                    &lt;/div&gt;
+                    &lt;div class=&quot;card-body&quot;&gt;
+                        &lt;h3&gt;Dice game&lt;/h3&gt;
+                        &lt;p&gt;This app was written in plain HTML, CSS and Javascript.&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;card-footer&quot;&gt;
+                        &lt;button class=&quot;card-btn&quot;  onclick=&quot;goTo(&apos;DiceGame/diceGameSourceCode.html&apos;)&quot;&gt;&lt;i class=&quot;fas fa-code fa-lg&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+                        &lt;button class=&quot;card-btn&quot;  onclick=&quot;goTo(&apos;DiceGame/diceGame.html&apos;)&quot;&gt;&lt;i class=&quot;fas fa-angle-double-right fa-lg&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+                     &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;!-- &lt;div class=&quot;gate-ap card&quot; id=&quot;gate&quot;&gt;
+                    &lt;div class=&quot;card-head&quot;&gt;
+                        &lt;img class=&quot;card-img&quot; src=&quot;images/card-img.svg&quot;&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;card-body&quot;&gt;
+                        &lt;h4&gt;Gate controling Android app&lt;/h4&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;blog card&quot; id=&quot;ralu&quot;&gt;
+                    &lt;div class=&quot;card-head&quot;&gt;
+                        &lt;img class=&quot;card-img&quot; src=&quot;images/card-img.svg&quot;&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;card-body&quot;&gt;
+                        &lt;h4&gt;Ralucica&apos;s blog&lt;/h4&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt; --&gt;
+
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/seltion&gt;
+
+
+&lt;!-- ///Projects section///////////////////////////// --&gt;
+    &lt;section class=&quot;contact-me&quot;&gt;
+        &lt;div class=&quot;contact-me-container&quot;&gt;
+             &lt;a class=&quot;contact-me-title&quot; href=&quot;contactMe.html&quot;&gt;Contact me&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;script src=&quot;javascript.js&quot; defer&gt;&lt;/script&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+            </code>
+        </pre>
+
+    </div>
+
+<!-- contactMe file ================================================================================================-->
+<div class="page-container">
+    <h3 class="page-title">Contact Me file</h3>
+    <pre>
+        <code class="nice-code">
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;meta name=&quot;author&quot; content=&quot;Cioromela Valentin Stefan&quot;&gt;
+    &lt;title&gt;Contact me&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;styles.css&quot;&gt;
+    &lt;link rel=&quot;icon&quot; href=&quot;images/favicon.ico&quot;&gt;
+
+
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;div class=&quot;contact-background&quot;&gt;
+        &lt;div class=&quot;contact-container&quot;&gt;
+            &lt;div class=&quot;contact-info&quot;&gt;
+                &lt;!-- Contact info ==================================================--&gt;
+                &lt;h2&gt;Contact info&lt;/h2&gt;
+                &lt;table class=&quot;contact-table&quot;&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;
+                            &lt;p&gt;Name&lt;/p&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                            &lt;p&gt;Cioromela Valentin Ștefan&lt;/p&gt;
+                        &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;
+                            &lt;p&gt;Adress&lt;/p&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                            &lt;p&gt;Segarcea&lt;/p&gt;
+                        &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;
+                            &lt;p&gt;Email&lt;/p&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                            &lt;p&gt;stefan_cioromela@yahoo.com&lt;/p&gt;
+                        &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;
+                            &lt;p&gt;Phone number&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/p&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                            &lt;p&gt;+40749198608&lt;/p&gt;
+                        &lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/table&gt;
+                &lt;hr&gt;
+            &lt;/div&gt;
+
+            &lt;!-- Send me a message (via Email) ======================================--&gt;
+            &lt;div class=&quot;form-container&quot;&gt;
+                &lt;h3 class=&quot;form-title&quot;&gt;Send me a message (via Email)&lt;/h3&gt;
+                &lt;form class=&quot;form-message&quot; id=&quot;message-form&quot; action=&quot;mailto:stefan_cioromela@yahoo.com&quot; method=&quot;POST&quot; enctype=&quot;text/plain&quot;&gt;
+                    &lt;!-- &lt;label&gt;Your name:&lt;/label&gt; --&gt;
+                    &lt;input class=&quot;field-transparent name&quot; type=&quot;text&quot; name=&quot;Name&quot; placeholder=&quot;Name&quot; id=&quot;name&quot;&gt;
+                    &lt;br&gt;
+                    &lt;br&gt;
+                    &lt;!-- &lt;label&gt;Your email:&lt;/label&gt; --&gt;
+                    &lt;input class=&quot;field-transparent email&quot; type=&quot;email&quot; name=&quot;Email&quot; placeholder=&quot;Email&quot; id=&quot;email&quot;&gt;
+                    &lt;br&gt;
+                    &lt;br&gt;
+                    &lt;textarea class=&quot;your-message&quot; name=&quot;yourMessage&quot; rows=&quot;10&quot; cols=&quot;50&quot; placeholder=&quot;Type your message&quot;&gt;&lt;/textarea&gt;
+                    &lt;br&gt;
+                    &lt;br&gt;
+                    &lt;!-- &lt;input class=&quot;send-btn&quot; type=&quot;submit&quot;&gt; --&gt;
+                &lt;/form&gt;
+                &lt;button class=&quot;send-btn&quot; type=&quot;submit&quot; form=&quot;message-form&quot; value=&quot;Submit&quot;&gt;Send&lt;/button&gt;
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+
+&lt;footer&gt;
+    &lt;div class=&quot;back-home &quot;&gt;
+        &lt;br&gt;
+        &lt;form&gt;
+            &lt;button class=&quot;back-button&quot; formaction=&quot;index.html&quot;&gt;Back to main page&lt;/button&gt;
+        &lt;/form&gt;
+        &lt;br&gt;
+    &lt;/div&gt;
+&lt;/footer&gt;
+
+&lt;/html&gt;
+        </code>
+    </pre>
+</div>
+
+<!-- Sorce code page ================================================================================================-->
+    <div class="page-container">
+        <h3 class="page-title">Sorce code page</h3>
+
+        <pre>
+             <code class="nice-code">
+&lt;!DOCTYPE html&gt;
+
+&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;meta name=&quot;author&quot; content=&quot;Cioromela Valentin Stefan&quot;&gt;
+    &lt;title&gt;Cioromela Valentin Stefan&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;styles.css&quot;&gt;
+    &lt;link rel=&quot;icon&quot; href=&quot;images/favicon.ico&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body class=&quot;source-body&quot;&gt;
+    &lt;header&gt;
+        &lt;div class=&quot;title-container&quot;&gt;
+            &lt;h1 class=&quot;page-title&quot;&gt;Source Code&lt;/h1&gt;
+            &lt;p&gt;This is the source code of the webside including css and javascript files.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/header&gt;
+
+&lt;!-- Html main page ================================--&gt;
+    &lt;div class=&quot;page-container&quot;&gt;
+        &lt;h3 class=&quot;page-title&quot;&gt;Main page&lt;/h3&gt;
+        &lt;pre&gt;
+            &lt;code class=&quot;nice-code&quot;&gt;
+
+            &lt;/code&gt;
+        &lt;/pre&gt;
+    &lt;/div&gt;
+
+&lt;!-- Sorce code page ==============================--&gt;
+    &lt;div class=&quot;page-container&quot;&gt;
+        &lt;h3 class=&quot;page-title&quot;&gt;Sorce code page&lt;/h3&gt;
+
+        &lt;pre&gt;
+             &lt;code class=&quot;nice-code&quot;&gt;
+    
+             &lt;/code&gt;
+        &lt;/pre&gt;
+    &lt;/div&gt;
+
+&lt;!-- CSS file =====================================--&gt;
+    &lt;div class=&quot;page-container&quot;&gt;
+        &lt;h3 class=&quot;page-title&quot;&gt;CSS file&lt;/h3&gt;
+        &lt;pre&gt;
+            &lt;code class=&quot;nice-code&quot;&gt;
+
+            &lt;/code&gt;
+        &lt;/pre&gt;
+    &lt;/div&gt;
+
+&lt;!-- Javascript file ===============================--&gt;
+    &lt;div class=&quot;page-container&quot;&gt;
+        &lt;h3 class=&quot;page-title&quot;&gt;CSS file&lt;/h3&gt;
+        &lt;pre&gt;
+            &lt;code class=&quot;nice-code&quot;&gt;
+
+            &lt;/code&gt;
+        &lt;/pre&gt;
+    &lt;/div&gt;
+
+&lt;/body&gt;
+
+&lt;footer&gt;
+    &lt;div class=&quot;back-home &quot;&gt;
+        &lt;br&gt;
+        &lt;form&gt;
+            &lt;button class=&quot;back-button&quot; formaction=&quot;index.html&quot;&gt;Back to main page&lt;/button&gt;
+        &lt;/form&gt;
+        &lt;br&gt;
+    &lt;/div&gt;
+&lt;/footer&gt;    
+             </code>
+        </pre>
+
+    </div>
+
+
+
+<!-- CSS file ================================================================================================-->
+    <div class="page-container">
+        <h3 class="page-title">CSS file</h3>
+        <pre>
+            <code class="nice-code">
+/* Fonts ***********************************************/
+
+@import url(&quot;https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&amp;display=swap&quot;);
+@import url(&quot;https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap&quot;);
+@import url(&quot;https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap&quot;);
+@import url(&quot;https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&amp;display=swap&quot;);
+@import url(&quot;https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&amp;display=swap&quot;);
+@import url(&quot;https://fonts.googleapis.com/css2?family=Zilla+Slab:ital@0;1&amp;display=swap&quot;);
+@import url(&quot;https://fonts.googleapis.com/css2?family=Asap:ital@1&amp;display=swap&quot;);
+
+/* All pages *******************************************/
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f6f6f6;
+  margin: 0;
+  font-family: &quot;Roboto&quot;, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link,
+a:visited {
+  color: #4e89ae;
+}
+
+/* Footer **************************************************/
+.back-home {
+  /* background-color: #f5f1da; */
+  padding-top: 20px;
+  padding-bottom: 30px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.back-button {
+  border: 1px solid #dadce0;
+  background-color: transparent;
+  border-radius: 4px;
+  font-family: &quot;Open Sans&quot;, sans-serif;
+  font-weight: 400;
+  color: #777;
+  font-size: 15px;
+  size: 50px;
+  padding: 3px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.back-button:hover {
+  box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.37);
+  cursor: pointer;
+}
+
+/* ================================================================================================================ */
+
+/* ================================================================================================================= */
+
+/* Main Page     SECTION */
+
+/* Section Greeting ************************************************/
+
+.greeting-container {
+  display: flex;
+  background-image: url(&quot;images/bg-img2.jpg&quot;);
+  flex-direction: column;
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+  margin-top: 0;
+}
+
+.greeting {
+  color: #332e29 !important;
+  margin-top: 44vh;
+  margin-left: 6vw;
+}
+
+.greeting-h1 {
+  font-family: &quot;Oswald&quot;, sans-serif;
+  font-size: 3rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.my-name {
+  font-family: &quot;Roboto&quot;, sans-serif;
+  font-size: 2rem;
+  letter-spacing: 4px;
+  margin-top: 0;
+}
+
+.shortcuts {
+  margin-top: 5vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+a.shortcut {
+  margin: 35px;
+  color: #333333;
+  font-size: x-large;
+}
+
+/* Hover */
+
+.shortcut:hover{
+  color: #111111;
+}
+
+
+
+/* Section About *****************************************************/
+
+.about-container {
+  min-height: 100vh;
+  background-color: #dddddd;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15vw;
+  font-family: &quot;Asap&quot;, sans-serif;
+  font-size: larger;
+  color: #757575;
+  /* text-shadow: 1px 1px #888888; */
+}
+
+.about-img-container {
+  display: flex;
+  align-items: center;
+}
+
+/* .about-img {
+    margin-top: 90px;
+    padding: 10px; 
+    
+} */
+
+.about-text {
+  padding: 3vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: larger;
+}
+
+.about-title {
+  text-align: center;
+}
+
+/* Section Projects **************************************************/
+
+.projects-continer {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(164, 168, 170);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-image: url(&quot;images/projects-bg.jpg&quot;);
+  background-size: cover;
+  font-family: &quot;Cambria&quot;, Georgia, Times, &quot;Times New Roman&quot;, serif;
+  color: #555555;
+}
+
+.projects-title {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  height: 440px;
+  border: 1px solid #e0e0e0;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  margin: 0.9rem;
+  transition: 0.3s;
+  padding: 0.5em 0.5em;
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-img {
+  height: 100px;
+}
+
+.card-head {
+  border-radius: 5px;
+  text-align: center;
+}
+
+.card-body {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-around;
+}
+.card-btn {
+  font-size: 30px;
+  color: #666666;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px 30px;
+  opacity: 0.2;
+}
+
+
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+} 
+
+.card:hover .card-btn {
+  opacity: 0.4;
+}
+
+.card .card-btn:hover {
+  opacity: 1;
+}
+
+.hide-btn {
+  visibility: hidden;
+}
+
+
+/* Section Contact Me ************************************************/
+
+.contact-me-container {
+  background-image: url(&quot;images/contact-me-bg.jpg&quot;);
+  background-size: cover;
+  background-position: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.contact-me-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.contact-me-title:hover {
+  color: #2C678C;
+   /* #3D789D; */
+  
+}
+
+/* @media (max-height: 500px){
+  .greeting {
+    margin-top: 30vh;
+  }
+} */
+
+
+
+/* @media ************************************************************/
+
+@media (max-width: 750px) {
+  /* Greeting */
+  .greeting {
+    margin-left: 1rem;
+  }
+  .greeting-h1 {
+    font-size: 3rem;
+  }
+  .my-name {
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+  a.shortcut {
+    font-size: x-large;
+    margin: 30px;
+  }
+
+  /* About */
+  .about-container {
+    flex-direction: column-reverse;
+    font-size: larger;
+    padding: 5vw;
+  }
+  .about-img-container {
+    display: flex;
+    justify-content: center;
+  }
+  .about-img {
+    width: 200px;
+    padding: 5px;
+  }
+  .about-text {
+    margin: 5px;
+  }
+  /* Projects */
+  .cards-grid {
+    grid-template-columns: 300px;
+  }
+}
+
+@media (max-width: 1400px) and (min-width: 750px) {
+  /* Greeting */
+  .greeting {
+    margin-left: 5rem;
+  }
+  .greeting-h1 {
+    font-size: 4rem;
+  }
+  .my-name {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+  }
+
+  /* About */
+  .about-container {
+    /* flex-direction: column-reverse; */
+    font-size: larger;
+  }
+  .about-img {
+    width: 220px;
+    padding: 5px;
+  }
+  /* Projects */
+  .cards-grid {
+    grid-template-columns: 300px 300px;
+  }
+}
+
+@media (min-width: 1400px) {
+  /* Greeting */
+  .greeting {
+    margin-left: 17vw;
+  }
+  .greeting-h1 {
+    font-size: 5rem;
+  }
+  .my-name {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+  }
+
+  a.shortcut {
+    font-size: x-large;
+  }
+
+  /* About */
+  /* .about-container {
+    
+    font-size: larger;
+  } */
+
+  .about-img {
+    width: 220px;
+    padding: 5px;
+  }
+
+  /* Contact */
+  .contact-me-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+}
+
+/* ======================================================================================================== */
+
+/* ======================================================================================================== */
+
+/* Contact Me page SECTION */
+
+.contact-background {
+  background-image: url(&quot;images/contact-bg.jpg&quot;);
+  background-size: cover;
+  background-position: center center;
+  min-height: 550px;
+  height: 100vh;
+  padding-top: 50px;
+}
+
+.contact-container {
+  display: flex;
+  font-family: &quot;Roboto&quot;, arial, sans-serif;
+  color: #555555;
+  /* align-items: center; */
+  margin-top: 4vh;
+  justify-content: center;
+  font-size: larger;
+  margin: 3vw;
+}
+
+.form-container {
+  margin: 0 3vw;
+}
+
+.field-transparent {
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 0px;
+  font-family: &quot;Roboto&quot;, arial, sans-serif;
+  color: #444444;
+  font-size: large;
+  width: 400px;
+  border: solid;
+  border-width: 0px 0px 3px 0px;
+  border-color: rgba(0, 0, 0, 0);
+}
+
+.field-transparent:focus {
+  border-color: rgba(88, 88, 88, 1);
+}
+
+.your-message {
+  background-color: rgba(0, 0, 0, 0.05);
+  width: 400px;
+  border: 0px;
+  padding: 30px;
+  font-family: &quot;Roboto&quot;, arial, sans-serif;
+  color: #444444;
+  font-size: large;
+}
+
+.your-message:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.send-btn {
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 0px;
+  border-radius: 4px;
+  font-family: &quot;Open Sans&quot;, sans-serif;
+  font-size: large;
+  font-weight: 600;
+  color: #777777;
+  margin-top: 5px;
+  padding: 4px 10px;
+  cursor: pointer;
+  
+}
+
+.send-btn:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #555555;
+}
+
+@media (max-width: 860px) {
+  .contact-background {
+    min-height: 850px;
+    padding-top: 10px;
+  }
+  .contact-container {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0;
+    font-size: medium;
+  }
+  .contact-info {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .field-transparent {
+    width: 345px;
+  }
+  .form-container {
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+  }
+  .your-message {
+    width: 345px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .contact-info {
+    margin-right: 0px;
+    margin-left: 100px;
+  }
+  .form-container {
+    margin-left: 120px;
+  }
+  .field-transparent {
+    width: 345px;
+  }
+  .field-transparent {
+    width: 500px;
+  }
+  .your-message {
+    width: 500px;
+  }
+
+  .contact-container {
+    font-size: x-large;
+  }
+}
+
+/* ==================================================================================================== */
+
+/* ===================================================================================================== */
+
+/* The Code Page SECTION */
+
+.source-body {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    flex-direction: column;
+    margin-top: 0;
+    color: #3e978b;
+    font-family: &apos;Libre Baskerville&apos;, serif;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FAFAFA;
+}
+
+.page-container {
+  padding: 30px;
+  margin-bottom: 60px;
+  background-color: #d7d7d7;
+  border-radius: 6px;
+}
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.title-container {
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.page-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.nice-code {
+  font-family: &quot;Fira Code&quot;, monospace;
+  font-size: small;
+  color: #565d47;
+}
+            </code>
+        </pre>
+    </div>
+
+
+<!-- Javascript file ================================================================================================-->
+    <div class="page-container">
+        <h3 class="page-title">Javascript file</h3>
+        <pre>
+            <code class="nice-code">
+/**
+ * @author Cioromela Valentin Stefan
+ */
+
+
+function goTo(theUrl) {
+    setTimeout(function(){ window.open(theUrl, '_blank').focus(); }, 200);
+}
+            </code>
+        </pre>
+    </div>
+
+
+</body>
+
+<footer>
+    <div class="back-home ">
+        <br>
+        <form>
+            <button class="back-button" formaction="index.html">Back to main page</button>
+        </form>
+        <br>
+    </div>
+</footer>

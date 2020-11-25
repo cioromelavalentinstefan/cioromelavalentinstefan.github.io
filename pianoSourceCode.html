@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Cioromela Valentin Stefan">
+    <title>SC Piano</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="codeDisplay.css">
+    <link rel="icon" href="../images/favicon.ico">
+
+</head>
+
+<body class="source-body">
+    <header>
+        <div class="title-container">
+            <h1 class="page-title">Piano Source Code</h1>
+            <p>This is the source code of Piano app including css and javascript files.</p>
+            <p>InnerHtml for displaying the souce code was transformed with another little project of mine,
+                 Html Converter, you can find it on my page.</p>
+        </div>
+    </header>
+
+<!-- Html file ========================================================================================-->
+    <div class="page-container">
+        <h3 class="page-title">Html file</h3>
+        <pre>
+<code class="nice-code">
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;utf-8&quot;&gt;
+        &lt;meta name=&quot;author&quot; content=&quot;Cioromela Valentin Stefan&quot;&gt;
+        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=5&quot;&gt;
+        &lt;title&gt;Stefan&apos;s piano&lt;/title&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;pianoStyles.css&quot;&gt;
+    &lt;/head&gt;
+    
+    &lt;body&gt;
+        &lt;div class=&quot;container&quot;&gt;
+            
+            &lt;header&gt;
+                &lt;div&gt;
+                    &lt;h1&gt;Ștefan&apos;s piano&lt;/h1&gt;
+                &lt;/div&gt;
+            &lt;/header&gt;
+    
+            &lt;div class=&quot;keys-container&quot;&gt;
+                &lt;!--octave 3--&gt;
+                &lt;span class=&quot;key witeK&quot; id=&quot;q&quot;&gt;q&lt;/span&gt; &lt;!-- C3  , q --&gt;
+                &lt;span class=&quot;key blackK&quot; id=&quot;Q&quot;&gt;Q&lt;/span&gt; &lt;!-- CS3 , Q --&gt;
+                &lt;span class=&quot;key witeK&quot; id=&quot;w&quot;&gt;w&lt;/span&gt; &lt;!-- D3  , w --&gt;
+                &lt;span class=&quot;key blackK&quot; id=&quot;W&quot;&gt;W&lt;/span&gt; &lt;!-- DS3 , W --&gt;
+                &lt;span class=&quot;key witeK&quot; id=&quot;e&quot;&gt;e&lt;/span&gt; &lt;!-- E3  , e --&gt;
+                &lt;span class=&quot;key witeK&quot; id=&quot;r&quot;&gt;r&lt;/span&gt; &lt;!-- F3  , r --&gt;
+                &lt;span class=&quot;key blackK&quot; id=&quot;R&quot;&gt;R&lt;/span&gt; &lt;!-- FS3 , R --&gt;
+                &lt;span class=&quot;key witeK&quot; id=&quot;t&quot;&gt;t&lt;/span&gt; &lt;!-- G3  , t --&gt;
+                &lt;span class=&quot;key blackK&quot; id=&quot;T&quot;&gt;T&lt;/span&gt; &lt;!-- GS3 , T --&gt;
+                &lt;span class=&quot;key witeK&quot; id=&quot;y&quot;&gt;y&lt;/span&gt; &lt;!-- A3  , y --&gt;
+                &lt;span class=&quot;key blackK&quot; id=&quot;Y&quot;&gt;Y&lt;/span&gt; &lt;!-- AS3 , Y --&gt;
+                &lt;span class=&quot;key witeK&quot; id=&quot;u&quot;&gt;u&lt;/span&gt; &lt;!-- B3  , u --&gt;
+    
+                &lt;!--octave 4--&gt;
+                &lt;span class=&quot;key witeK&quot; id=&quot;i&quot;&gt;i&lt;/span&gt; &lt;!-- C4  , i --&gt;
+                &lt;span class=&quot;key blackK&quot; id=&quot;I&quot;&gt;I&lt;/span&gt; &lt;!-- CS4 , I --&gt;
+                &lt;span class=&quot;key witeK&quot; id=&quot;o&quot;&gt;o&lt;/span&gt; &lt;!-- D4  , o --&gt;
+                &lt;span class=&quot;key blackK&quot; id=&quot;O&quot;&gt;O&lt;/span&gt; &lt;!-- DS4 , O --&gt;
+                &lt;span class=&quot;key witeK&quot; id=&quot;p&quot;&gt;p&lt;/span&gt; &lt;!-- E4  , p --&gt;
+                &lt;span class=&quot;key blackK &quot; id=&quot;P&quot;&gt;P&lt;/span&gt; &lt;!-- F4  , P --&gt;
+                &lt;span class=&quot;key witeK&quot; id=&quot;a&quot;&gt;a&lt;/span&gt; &lt;!-- FS4 , a --&gt;
+                &lt;span class=&quot;key witeK&quot; id=&quot;s&quot;&gt;s&lt;/span&gt; &lt;!-- G4  , s --&gt;
+                &lt;span class=&quot;key blackK&quot; id=&quot;S&quot;&gt;S&lt;/span&gt; &lt;!-- GS4 , S --&gt;
+                &lt;span class=&quot;key witeK&quot; id=&quot;d&quot;&gt;d&lt;/span&gt; &lt;!-- A4  , d --&gt;
+                &lt;span class=&quot;key blackK&quot; id=&quot;D&quot;&gt;D&lt;/span&gt; &lt;!-- AS4 , D --&gt;
+                &lt;span class=&quot;key witeK&quot; id=&quot;f&quot;&gt;f&lt;/span&gt; &lt;!-- B4  , f --&gt;
+    
+                &lt;!--octave 5--&gt;
+                &lt;span class=&quot;key witeK&quot; id=&quot;g&quot;&gt;g&lt;/span&gt; &lt;!-- C4  , i --&gt;
+                &lt;span class=&quot;key blackK&quot; id=&quot;G&quot;&gt;G&lt;/span&gt; &lt;!-- CS4 , I --&gt;
+                &lt;span class=&quot;key witeK&quot; id=&quot;h&quot;&gt;h&lt;/span&gt; &lt;!-- D4  , o --&gt;
+                &lt;span class=&quot;key blackK&quot; id=&quot;H&quot;&gt;H&lt;/span&gt; &lt;!-- DS4 , O --&gt;
+                &lt;span class=&quot;key witeK&quot; id=&quot;j&quot;&gt;j&lt;/span&gt; &lt;!-- E4  , p --&gt;
+                &lt;span class=&quot;key blackK &quot; id=&quot;J&quot;&gt;J&lt;/span&gt; &lt;!-- F4  , P --&gt;
+                &lt;span class=&quot;key witeK&quot; id=&quot;k&quot;&gt;k&lt;/span&gt; &lt;!-- FS4 , a --&gt;
+                &lt;span class=&quot;key witeK&quot; id=&quot;l&quot;&gt;l&lt;/span&gt; &lt;!-- G4  , s --&gt;
+                &lt;span class=&quot;key blackK&quot; id=&quot;L&quot;&gt;L&lt;/span&gt; &lt;!-- GS4 , S --&gt;
+                &lt;span class=&quot;key witeK&quot; id=&quot;z&quot;&gt;z&lt;/span&gt; &lt;!-- A4  , d --&gt;
+                &lt;span class=&quot;key blackK&quot; id=&quot;Z&quot;&gt;Z&lt;/span&gt; &lt;!-- AS4 , D --&gt;
+                &lt;span class=&quot;key witeK&quot; id=&quot;x&quot;&gt;x&lt;/span&gt; &lt;!-- B4  , f --&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    
+        &lt;!-- &lt;script src=&quot;pianoJS.js&quot; async&gt;&lt;/script&gt; --&gt;
+        &lt;script src=&quot;pianoJS.js&quot; defer&gt;&lt;/script&gt;
+    &lt;/body&gt;
+    
+    &lt;/html&gt;
+    
+</code>
+        </pre>
+ </div>
+
+
+    <!-- Css file ========================================================================================-->
+    <div class="page-container">
+        <h3 class="page-title">CSS file</h3>
+
+        <pre>
+<code class="nice-code">
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        margin: 0;
+    }
+    
+    h1 {
+        text-align: center;
+        
+    }
+    
+    .container {
+        user-select: none;
+        -webkit-user-select: none;
+        
+        height: 100vh;
+        background-color: #389393;
+        
+        padding-left: 1vw;
+        padding-right: 1vw;
+        padding-bottom: 20vh;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    
+    .keys-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 10vh;
+        text-align: center;
+        font-family: &apos;Courier New&apos;, Courier, monospace;
+    }
+    
+    .witeK {
+        height: 250px;
+        width: 55px;
+        background-color: #f1f6f9;
+        border: 1px solid #000;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        margin-left: 1px;
+        margin-right: 1px;
+        padding-bottom: 9px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        font-size: larger;
+    }
+    
+    .blackK {
+        height: 140px;
+        width: 30px;
+        background-color: #213e3b;
+        border: 1px solid #000;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+        margin-left: -15px;
+        margin-right: -15px;
+        padding-bottom: 9px;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        color: #fff;
+    }
+    
+    .pressed {
+        /* background-image: linear-gradient(to bottom, #fffcfc, #fc9c9c); */
+        background-color: red;
+    }
+    
+    
+    @media(min-width: 2000px){
+        .witeK {
+            height: 390px;
+            width: 80px;
+            margin-left: 1px;
+            margin-right: 1px;
+            padding-bottom: 9px;
+            font-size: larger;
+        }
+        
+        .blackK {
+            height: 240px;
+            width: 40px;
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+            margin-left: -20px;
+            margin-right: -20px;
+            padding-bottom: 9px;
+        }
+        
+    } 
+</code>
+        </pre>
+    </div>
+
+
+    <!-- Javascript file ================================================================================================-->
+    <div class="page-container">
+        <h3 class="page-title">Javascript file</h3>
+        <pre>
+<code class="nice-code">
+    /**
+    * @author Cioromela Valentin Stefan
+    */
+   
+   var mDown = false;
+   
+   // ////////////////////////////////////////////
+   // Mouse
+   document.querySelectorAll(&apos;.key&apos;).forEach(item =&gt; {
+   
+       item.addEventListener(&apos;mousedown&apos;, function() {
+               makeSound(this.id);
+               buttonAnimation(this.id);
+           }
+       )
+   });
+   
+   document.querySelectorAll(&apos;.key&apos;).forEach(item =&gt; {
+       item.addEventListener(&apos;mouseenter&apos;, function() {
+               if (mDown === true) {
+                   makeSound(this.id);
+                   buttonAnimation(this.id);
+               }
+           }
+       )
+   });
+   
+   document.querySelectorAll(&apos;.key&apos;).forEach(item =&gt; {
+       item.addEventListener(&apos;mouseup&apos;, function() {
+           buttonAnimation(this.id, false);
+       })
+   });
+   
+   document.querySelectorAll(&apos;.key&apos;).forEach(item =&gt; {
+       item.addEventListener(&apos;mouseleave&apos;, function() {
+           buttonAnimation(this.id, false);
+       })
+   });
+   
+   
+   document.onmouseup = function(event) {
+       mDown = false;
+   }
+   
+   document.onmousedown = function() {
+       mDown = true;
+   }
+   
+   
+   // ////////////////////////////////////////////
+   // keyboard
+   document.addEventListener(&quot;keydown&quot;, function(e) {
+       if (e.repeat === false) {
+           makeSound(e.key);
+           buttonAnimation(e.key, true);
+       }
+   });
+   
+   document.addEventListener(&quot;keyup&quot;, function(e) {
+       buttonAnimation(e.key, false);
+   });
+   
+   
+   // ////////////////////////////////////////////
+   // mobile touch
+   document.querySelectorAll(&apos;.key&apos;).forEach(item =&gt; {
+       item.addEventListener(&apos;touchstart&apos;, function(e) {
+               e.preventDefault();
+               makeSound(this.id);
+               buttonAnimation(this.id);
+           }
+       );
+   });
+   
+   document.querySelectorAll(&apos;.key&apos;).forEach(item =&gt; {
+       item.addEventListener(&apos;touchend&apos;, function() {
+               buttonAnimation(this.id, false);
+           }
+       )
+   });
+   
+   
+   ////////////////////////////////////////////////
+   //  Animation
+   
+   function buttonAnimation(currentKey, end) {
+       let activeButton = document.getElementById(currentKey);
+       activeButton.classList.add(&quot;pressed&quot;);
+       if (end === false) {
+           activeButton.classList.remove(&quot;pressed&quot;);
+       }
+   }
+   
+   
+   //////////////////////////////////////////////////
+   // Sound
+   function makeSound(key) {
+   
+       switch (key) {
+   
+           // octave 3
+           case &quot;q&quot;:
+               let c3 = new Audio(&quot;sounds/c3.mp3&quot;);
+               c3.play();
+               break;
+   
+           case &quot;Q&quot;:
+               let cs3 = new Audio(&quot;sounds/cs3.mp3&quot;);
+               cs3.play();
+               break;
+   
+           case &quot;w&quot;:
+               let d3 = new Audio(&apos;sounds/d3.mp3&apos;);
+               d3.play();
+               break;
+   
+           case &quot;W&quot;:
+               let ds3 = new Audio(&apos;sounds/ds3.mp3&apos;);
+               ds3.play();
+               break;
+   
+           case &quot;e&quot;:
+               let e3 = new Audio(&apos;sounds/e3.mp3&apos;);
+               e3.play();
+               break;
+   
+           case &quot;r&quot;:
+               let f3 = new Audio(&apos;sounds/f3.mp3&apos;);
+               f3.play();
+               break;
+   
+           case &quot;R&quot;:
+               let fs3 = new Audio(&apos;sounds/fs3.mp3&apos;);
+               fs3.play();
+               break;
+   
+           case &quot;t&quot;:
+               let g3 = new Audio(&apos;sounds/g3.mp3&apos;);
+               g3.play();
+               break;
+   
+           case &quot;T&quot;:
+               let gs3 = new Audio(&apos;sounds/gs3.mp3&apos;);
+               gs3.play();
+               break;
+   
+           case &quot;y&quot;:
+               let a3 = new Audio(&apos;sounds/a3.mp3&apos;);
+               a3.play();
+               break;
+   
+           case &quot;Y&quot;:
+               let as3 = new Audio(&apos;sounds/as3.mp3&apos;);
+               as3.play();
+               break;
+   
+           case &quot;u&quot;:
+               let b3 = new Audio(&apos;sounds/b3.mp3&apos;);
+               b3.play();
+               break;
+   
+   
+           // octave  4  /////////////////////////////////////////////
+           case &quot;i&quot;:
+               let c4 = new Audio(&quot;sounds/c4.mp3&quot;);
+               c4.play();
+               break;
+   
+           case &quot;I&quot;:
+               let cs4 = new Audio(&quot;sounds/cs4.mp3&quot;);
+               cs4.play();
+               break;
+   
+           case &quot;o&quot;:
+               let d4 = new Audio(&apos;sounds/d4.mp3&apos;);
+               d4.play();
+               break;
+   
+           case &quot;O&quot;:
+               let ds4 = new Audio(&apos;sounds/ds4.mp3&apos;);
+               ds4.play();
+               break;
+   
+           case &quot;p&quot;:
+               let e4 = new Audio(&apos;sounds/e4.mp3&apos;);
+               e4.play();
+               break;
+   
+           case &quot;P&quot;:
+               let f4 = new Audio(&apos;sounds/f4.mp3&apos;);
+               f4.play();
+               break;
+   
+           case &quot;a&quot;:
+               let fs4 = new Audio(&apos;sounds/fs4.mp3&apos;);
+               fs4.play();
+               break;
+   
+           case &quot;s&quot;:
+               let g4 = new Audio(&apos;sounds/g4.mp3&apos;);
+               g4.play();
+               break;
+   
+           case &quot;S&quot;:
+               let gs4 = new Audio(&apos;sounds/gs4.mp3&apos;);
+               gs4.play();
+               break;
+   
+           case &quot;d&quot;:
+               let a4 = new Audio(&apos;sounds/a4.mp3&apos;);
+               a4.play();
+               break;
+   
+           case &quot;D&quot;:
+               let as4 = new Audio(&apos;sounds/as4.mp3&apos;);
+               as4.play();
+               break;
+   
+           case &quot;f&quot;:
+               let b4 = new Audio(&apos;sounds/b4.mp3&apos;);
+               b4.play();
+               break;
+   
+           // octave  5  /////////////////////////////////////////////
+           case &quot;g&quot;:
+               let c5 = new Audio(&quot;sounds/c5.mp3&quot;);
+               c5.play();
+               break;
+   
+           case &quot;G&quot;:
+               let cs5 = new Audio(&quot;sounds/cs5.mp3&quot;);
+               cs5.play();
+               break;
+   
+           case &quot;h&quot;:
+               let d5 = new Audio(&apos;sounds/d5.mp3&apos;);
+               d5.play();
+               break;
+   
+           case &quot;H&quot;:
+               let ds5 = new Audio(&apos;sounds/ds5.mp3&apos;);
+               ds5.play();
+               break;
+   
+           case &quot;j&quot;:
+               let e5 = new Audio(&apos;sounds/e5.mp3&apos;);
+               e5.play();
+               break;
+   
+           case &quot;J&quot;:
+               let f5 = new Audio(&apos;sounds/f5.mp3&apos;);
+               f5.play();
+               break;
+   
+           case &quot;k&quot;:
+               let fs5 = new Audio(&apos;sounds/fs5.mp3&apos;);
+               fs5.play();
+               break;
+   
+           case &quot;l&quot;:
+               let g5 = new Audio(&apos;sounds/g5.mp3&apos;);
+               g5.play();
+               break;
+   
+           case &quot;L&quot;:
+               let gs5 = new Audio(&apos;sounds/gs5.mp3&apos;);
+               gs5.play();
+               break;
+   
+           case &quot;z&quot;:
+               let a5 = new Audio(&apos;sounds/a5.mp3&apos;);
+               a5.play();
+               break;
+   
+           case &quot;Z&quot;:
+               let as5 = new Audio(&apos;sounds/as5.mp3&apos;);
+               as5.play();
+               break;
+   
+           case &quot;x&quot;:
+               let b5 = new Audio(&apos;sounds/b5.mp3&apos;);
+               b5.play();
+               break;        
+   
+           default:
+               console.log(key);
+       }
+   }
+</code>
+        </pre>
+
+    </div>
+  
+</body>
+
+<footer>
+    <div class="back-home ">
+        <br>
+        <form>
+            <button class="back-button" formaction="../index.html">Back to main page</button>
+        </form>
+        <br>
+    </div>
+</footer>

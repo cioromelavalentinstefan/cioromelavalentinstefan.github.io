@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Cioromela Valentin Stefan">
+    <title>SC Dice Game</title>
+    <link rel="stylesheet" href="codeDisplay.css">
+    <link rel="icon" href="../images/favicon.ico">
+
+</head>
+
+
+<body class="source-body">
+    <header>
+        <div class="title-container">
+            <h1 class="page-title">Dice Game Source Code</h1>
+            <p>This is the source code of Piano app including css and javascript files.</p>
+            <p>InnerHtml for displaying the souce code was transformed with another little project of mine,
+                 Html Converter, you can find it on my page.</p>
+        </div>
+    </header>
+
+
+<!-- Html file ========================================================================================-->
+    <div class="page-container">
+        <h3 class="page-title">Html file</h3>
+        <pre>
+<code class="nice-code">
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;utf-8&quot;&gt;
+        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+        &lt;meta name=&quot;author&quot; content=&quot;Cioromela Valentin Stefan&quot;&gt;
+        &lt;title&gt;Dice game&lt;/title&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;diceStyles.css&quot;&gt;
+    &lt;/head&gt;
+    
+    &lt;body&gt;
+        &lt;div class=&quot;container&quot;&gt;
+    
+            &lt;div class=&quot;title&quot;&gt;
+                &lt;h1 id=&quot;title&quot;&gt;Dice dice dice&lt;/h1&gt;
+            &lt;/div&gt;
+    
+            &lt;div class=&quot;bg-cont&quot;&gt;
+                &lt;h1 class=&quot;background-text&quot;&gt;DICE WAR&lt;/h1&gt;
+            &lt;/div&gt;
+    
+            &lt;div class=&quot;img-container&quot;&gt;
+    
+                &lt;div class=&quot;score&quot;&gt;
+                    &lt;h3&gt;Score&lt;/h3&gt;
+                    &lt;h3 id=&quot;player1&quot;&gt;0&lt;/h3&gt;
+    
+                &lt;/div&gt;
+    
+                &lt;div class=&quot;dice&quot;&gt;
+                    &lt;p&gt;Player 1&lt;/p&gt;
+                    &lt;img class=&quot;img img1&quot; src=&quot;&quot;&gt;
+                &lt;/div&gt;
+    
+                &lt;div class=&quot;dice&quot;&gt;
+                    &lt;p&gt;Player 2&lt;/p&gt;
+                    &lt;img class=&quot;img img2&quot; src=&quot;&quot;&gt;
+                &lt;/div&gt;
+    
+                &lt;div class=&quot;score&quot;&gt;
+                    &lt;h3&gt;Score&lt;/h3&gt;
+                    &lt;h3 id=&quot;player2&quot;&gt;0&lt;/h3&gt;
+                    
+                &lt;/div&gt;
+            &lt;/div&gt;
+    
+            &lt;button class=&quot;bt-roll&quot; id=&quot;rollDice&quot; onclick=&quot;roll()&quot;&gt;GO&lt;/button&gt;
+    
+        &lt;/div&gt;
+    
+        &lt;script src=&quot;diceJS.js&quot; async defer&gt;&lt;/script&gt;
+    &lt;/body&gt;
+    
+    &lt;/html&gt;
+</code>
+        </pre>
+ </div>
+
+
+    <!-- CSS file ========================================================================================-->
+    <div class="page-container">
+        <h3 class="page-title">CSS file</h3>
+
+        <pre>
+<code class="nice-code">
+    @import url(&apos;https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;display=swap&apos;);
+    @import url(&apos;https://fonts.googleapis.com/css2?family=Alfa+Slab+One&amp;display=swap&apos;);
+    @import url(&apos;https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&amp;display=swap&apos;);
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    
+    body {
+        margin: 0;
+        height: 100vh;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        padding-bottom: 20vh;
+        background-color: #214252;
+    }
+    
+    .background-text {
+        position: absolute;
+        top: 30vh;
+        left: 50vw;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        text-align: center;
+        font-size: 23vh;
+        color: rgb(0, 0, 0, 0.2);
+        font-family: &apos;Alfa Slab One&apos;, cursive;
+        
+    }
+    
+    .img{
+        height: 30vh;
+    }
+    
+    .title {
+        margin: 0;
+        text-align: center;
+        font-family: &apos;Mountains of Christmas&apos;, cursive;
+        margin-bottom: 2vh;
+    }
+    
+    .img-container {
+        margin: 0;
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        font-family: &apos;Press Start 2P&apos;, cursive;
+    }
+    
+    .score {
+        display: flex;
+        flex-direction: column;
+        justify-content:  center;
+    
+    }
+    
+    .bt-roll {
+        position: absolute; 
+         top: 80%;
+        left: 50%;
+        /* align-items: center; */
+        transform: translate(-50%, -50%);
+        width: 133px;
+        text-align: center;
+        font-size: 60px;
+        border-radius: 40px;
+        border-width: 0;
+        background-color: rgb(0, 0, 0, 0);
+        font-family: &apos;Press Start 2P&apos;, cursive;
+    }
+    
+    .bt-roll:hover {
+        box-shadow: 0 10px 4px 0 rgba(0, 0, 0, 0.37);
+        cursor: pointer;
+    }
+    
+    @media(min-width: 1390px){
+        .background-text {
+            top: 30vh;
+            left: 50vw;
+            font-size: 34vh;
+        }
+    } 
+</code>
+        </pre>
+    </div>
+
+
+    <!-- Javascript file ================================================================================================-->
+    <div class="page-container">
+        <h3 class="page-title">Javascript file</h3>
+        <pre>
+<code class="nice-code">
+    /**
+    * @author Cioromela Valentin Stefan
+    */
+   
+   var dice1, dice2;
+   var player1 = 0, player2 = 0;
+   
+   var dices = [&quot;images/dice1.png&quot;, &quot;images/dice2.png&quot;, &quot;images/dice3.png&quot;, &quot;images/dice4.png&quot;, &quot;images/dice5.png&quot;, &quot;images/dice6.png&quot;];
+   
+   function roll() {
+   
+   
+       dice1 = Math.floor(Math.random() * 6);
+       dice2 = Math.floor(Math.random() * 6);
+   
+       document.querySelector(&quot;.img1&quot;).setAttribute(&quot;src&quot;, dices[dice1]);
+       document.querySelector(&quot;.img2&quot;).setAttribute(&quot;src&quot;, dices[dice2]);
+   
+       if (dice1 &gt; dice2) {
+           document.getElementById(&quot;title&quot;).innerHTML = &quot;🚩 Player 1 Wins!&quot;;
+           player1 += 1;
+           document.getElementById(&quot;player1&quot;).innerHTML = player1;
+       } else if (dice2 &gt; dice1) {
+           document.getElementById(&quot;title&quot;).innerHTML = &quot;Player 2 Wins! 🚩&quot;;
+           player2 += 1;
+           document.getElementById(&quot;player2&quot;).innerHTML = player2;
+       } else {
+           document.getElementById(&quot;title&quot;).innerHTML = &quot;Draw!&quot;;
+       }
+   
+   }
+   
+   
+</code>
+        </pre>
+
+    </div>
+  
+</body>
+
+<footer>
+    <div class="back-home ">
+        <br>
+        <form>
+            <button class="back-button" formaction="../index.html">Back to main page</button>
+        </form>
+        <br>
+    </div>
+</footer>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Cioromela Valentin Stefan">
+    <title>SC Html Converter</title>
+    <link rel="stylesheet" href="codeDisplay.css">
+    <link rel="icon" href="../images/favicon.ico">
+</head>
+
+<body class="source-body">
+    <header>
+        <div class="title-container">
+            <h1 class="page-title">Html Converter Source Code</h1>
+            <p>This is the source code of Html Converter including css and javascript files.</p>
+            <p>InnerHtml for displaying the souce code was transformed with another little project of mine,
+                Html Converter, you can find it on my page.</p>
+        </div>
+    </header>
+
+<!-- Html file ========================================================================================-->
+    <div class="page-container">
+        <h3 class="page-title">Html file</h3>
+        <pre>
+<code class="nice-code">
+    &lt;!DOCTYPE html &gt;
+
+    &lt;head&gt;
+        &lt;meta charset=&quot;utf-8&quot;&gt;
+        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+        &lt;meta name=&quot;author&quot; content=&quot;Cioromela Valentin Stefan&quot;&gt;
+        &lt;title&gt;Html Converter&lt;/title&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;htmlConverterStyles.css&quot;&gt;
+        &lt;link rel=&quot;icon&quot; href=&quot;../images/favicon.ico&quot;&gt;
+    &lt;/head&gt;
+
+  
+    &lt;body class=&quot;converter-body&quot;&gt;
+    
+        &lt;div class=&quot;converter-header&quot;&gt;
+            &lt;h2 class=&quot;title-html&quot;&gt;Displaying HTML&lt;/h2&gt;
+            &lt;p class=&quot;presentation&quot;&gt;This little web app will convert the characters &amp;, &amp;#60 , &gt; , &quot; , &apos; in a string to their coresponding html entities.&lt;/p&gt;
+    
+        &lt;/div&gt;
+        &lt;div class=&quot;converter-container&quot;&gt;
+            &lt;h4 class=&quot;h4-input&quot;&gt;Your Code:&lt;/h4&gt;
+            
+            
+            &lt;textarea class=&quot;input-code&quot; id=&quot;inputCode&quot; placeholder=&quot;Paste here your piece of code...&quot;&gt;&lt;/textarea&gt;
+            
+            
+            &lt;button class=&quot;btn&quot;  onclick=&quot;clearText()&quot; type=&quot;button&quot; &gt;Clear&lt;/button&gt;
+            &lt;button class=&quot;btn&quot;  onclick=&quot;convert()&quot; type=&quot;button&quot;&gt;Convert&lt;/button&gt;
+            
+            &lt;h4&gt;The result:&lt;/h4&gt;
+            &lt;textarea class=&quot;output-entities &quot; id=&quot;outputEntities&quot; placeholder=&quot;Output code ...&quot;&gt;&lt;/textarea&gt;
+            &lt;button class=&quot;btn&quot;  onclick=&quot;copyCode()&quot; type=&quot;button&quot;&gt;Copy&lt;/button&gt;
+        &lt;/div&gt;
+    
+        &lt;script src=&quot;htmlConverterJavascript.js&quot;&gt;&lt;/script&gt;
+    &lt;/body&gt;
+    
+    &lt;footer&gt;
+        &lt;div class=&quot;back-home &quot;&gt;
+            &lt;br&gt;
+            &lt;form&gt;
+                &lt;button class=&quot;back-button&quot; formaction=&quot;../index.html&quot;&gt;Back to main page&lt;/button&gt;
+            &lt;/form&gt;
+            &lt;br&gt;
+        &lt;/div&gt;
+    &lt;/footer&gt;
+    
+    &lt;/html&gt;
+</code>
+    </pre>
+
+    </div>
+
+
+    <!-- Css file ========================================================================================-->
+    <div class="page-container">
+        <h3 class="page-title">CSS file</h3>
+
+        <pre>
+<code class="nice-code">
+    @import url(&apos;https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap&apos;);
+    @import url(&apos;https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap&apos;);
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .section1{
+        min-height: 100vh;
+    }
+    .converter-body {
+        background-color: #FAFAFA;
+        width: 80vw;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        color: #777;
+        font-family: &apos;Roboto&apos;, arial, sans-serif;
+    }
+    
+    /* Displaying HTML */
+    .title-html {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    /* Container */
+    .converter-container {
+        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+        border-radius: 3px;
+        padding: 5px 20px;
+        padding-bottom: 25px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    
+    /* Text area */
+    
+    textarea{
+        width: 100%;
+         min-height: 100px;
+        height:  calc(50vh - 206px);;
+        resize: vertical; 
+    }
+    .input-code {
+        border: 1px solid #cccccc;
+        padding: 20px;
+    }
+    /* Text area */
+    .output-entities {
+        padding: 20px;
+        background-color: #F5F5F5;
+        border: 1px solid #cccccc;
+    }
+    
+    /*  Button */
+    .btn {
+        border: 1px solid #dadce0;
+        border-radius: 4px;
+        font-family: &apos;Open Sans&apos;, sans-serif;
+        font-weight: 600;
+        color: #777;
+        font-size: 15px;
+        size: 36px;
+        margin-top: 5px;
+        margin-right: 15px;
+        cursor: pointer;
+    }
+    
+    .btn:hover {
+        
+        background-color: rgba(0, 0, 0, 0.1);
+        color: #555555;
+    }
+    
+    
+    /* Footer -----------*/
+    .back-home {
+        /* background-color: #f5f1da; */
+        padding-top: 20px;
+        padding-bottom: 30px;
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    .back-button {
+        border: 1px solid #dadce0;
+        background-color: transparent;
+        border-radius: 4px;
+        font-family: &apos;Open Sans&apos;, sans-serif;
+        font-weight: 400;
+        color: #777;
+        font-size: 15px;
+        padding: 3px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+    
+    .back-button:hover {
+        box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.37);
+        cursor: pointer;
+    }
+</code>
+        </pre>
+
+    </div>
+</body>
+
+
+<!-- Javascript file ================================================================================================-->
+<div class="page-container">
+    <h3 class="page-title">Javascript file</h3>
+    <pre>
+<code class="nice-code">
+    /**
+    * @author Cioromela Valentin Stefan
+    */   
+
+    // Processing the text
+    function convertHTML(str) {
+    
+        let entities = {
+            &apos;&amp;&apos;: &apos;&amp;amp;&apos;,
+            &apos;\&quot;&apos;: &apos;&amp;quot;&apos;,
+            &apos;\&apos;&apos;: &apos;&amp;apos;&apos;,
+            &apos;&lt;&apos;: &apos;&amp;lt;&apos;,
+            &apos;&gt;&apos;: &apos;&amp;gt;&apos;
+        };
+    
+        return str.split(&apos;&apos;).map(function (char) {
+            return entities[char] || char;
+        }).join(&apos;&apos;);
+    }
+    
+    
+    // convert
+    function convert() {
+        let text = document.getElementById(&quot;inputCode&quot;).value;
+        //console.log(text);
+        console.log(convertHTML(text));
+        document.getElementById(&quot;outputEntities&quot;).value = convertHTML(text);
+    
+    }
+    
+    // empty
+    function clearText() {
+        document.getElementById(&quot;inputCode&quot;).value = &apos;&apos;;
+    }
+    
+    // Copy
+    function copyCode() {
+        let copyText = document.querySelector(&quot;#outputEntities&quot;);
+        copyText.select();
+        document.execCommand(&quot;copy&quot;);
+    }    
+</code>
+    </pre>
+
+</div>
+
+<footer>
+    <div class="back-home ">
+        <br>
+        <form>
+            <button class="back-button" formaction="../index.html">Back to main page</button>
+        </form>
+        <br>
+    </div>
+</footer>

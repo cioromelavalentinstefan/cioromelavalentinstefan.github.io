@@ -1,0 +1,52 @@
+<!DOCTYPE html >
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Cioromela Valentin Stefan">
+    <title>Html Converter</title>
+    <link rel="stylesheet" href="htmlConverterStyles.css">
+    <link rel="icon" href="../images/favicon.ico">
+</head>
+
+<body class="converter-body">
+<section class="section1">
+
+
+    <div class="converter-header">
+        <h2 class="title-html">Displaying HTML</h2>
+        <p class="presentation">This little web app will convert the characters &, &#60 , > , " , ' in a string to their coresponding html entities.</p>
+    </div>
+    <div class="converter-container">
+        <h4 class="h4-input">Your Code:</h4>
+        
+        
+        <textarea class="input-code" id="inputCode" placeholder="Paste here your piece of code..."></textarea>
+        
+        
+        <button class="btn"  onclick="clearText()" type="button" >Clear</button>
+        <button class="btn"  onclick="convert()" type="button">Convert</button>
+        
+        <h4>The result:</h4>
+        <textarea class="output-entities " id="outputEntities" placeholder="Output code ..."></textarea>
+        <button class="btn"  onclick="copyCode()" type="button">Copy</button>
+    </div>
+</section>
+    
+    <footer>
+        <div class="back-home ">
+            <br>
+            <form>
+                <button class="back-button" formaction="../index.html">Back to main page</button>
+            </form>
+            <br>
+        </div>
+    </footer>
+
+    <script src="htmlConverterJavascript.js"></script>
+
+</body>
+
+
+
+</html>

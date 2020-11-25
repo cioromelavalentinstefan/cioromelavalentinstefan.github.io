@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Cioromela Valentin Stefan">
+    <title>Contact me</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/favicon.ico">
+
+
+</head>
+
+<body>
+    <div class="contact-background">
+        <div class="contact-container">
+            <div class="contact-info">
+                <!-- Contact info ================================================================================================-->
+                <h2>Contact info</h2>
+                <table class="contact-table">
+                    <tr>
+                        <td>
+                            <p>Name</p>
+                        </td>
+                        <td>
+                            <p>Cioromela Valentin Ștefan</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Adress</p>
+                        </td>
+                        <td>
+                            <p>Segarcea</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Email</p>
+                        </td>
+                        <td>
+                            <p>stefan_cioromela@yahoo.com</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Phone number&nbsp;&nbsp;&nbsp;</p>
+                        </td>
+                        <td>
+                            <p>+40749198608</p>
+                        </td>
+                    </tr>
+                </table>
+                <hr>
+            </div>
+
+            <!-- Send me a message (via Email) ======================================================================================-->
+            <div class="form-container">
+                <h3 class="form-title">Send me a message (via Email)</h3>
+                <form class="form-message" id="message-form" action="mailto:stefan_cioromela@yahoo.com" method="POST" enctype="text/plain">
+                    <!-- <label>Your name:</label> -->
+                    <input class="field-transparent name" type="text" name="Name" placeholder="Name" id="name">
+                    <br>
+                    <br>
+                    <!-- <label>Your email:</label> -->
+                    <input class="field-transparent email" type="email" name="Email" placeholder="Email" id="email">
+                    <br>
+                    <br>
+                    <textarea class="your-message" name="yourMessage" rows="10" cols="50" placeholder="Type your message"></textarea>
+                    <br>
+                    <br>
+                    <!-- <input class="send-btn" type="submit"> -->
+                </form>
+                <button class="send-btn" type="submit" form="message-form" value="Submit">Send</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<footer>
+    <div class="back-home ">
+        <br>
+        <form>
+            <button class="back-button" formaction="index.html">Back to main page</button>
+        </form>
+        <br>
+    </div>
+</footer>
+
+</html>

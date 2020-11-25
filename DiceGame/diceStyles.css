@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding-bottom: 20vh;
+    background-color: #214252;
+}
+
+.background-text {
+    position: absolute;
+    top: 30vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+    font-size: 23vh;
+    color: rgb(0, 0, 0, 0.2);
+    font-family: 'Alfa Slab One', cursive;
+    
+}
+
+.img{
+    height: 30vh;
+}
+
+.title {
+    margin: 0;
+    text-align: center;
+    font-family: 'Mountains of Christmas', cursive;
+    margin-bottom: 2vh;
+}
+
+.img-container {
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.score {
+    display: flex;
+    flex-direction: column;
+    justify-content:  center;
+
+}
+
+
+.bt-roll {
+    position: absolute; 
+     top: 80%;
+    left: 50%;
+    /* align-items: center; */
+    transform: translate(-50%, -50%);
+    width: 133px;
+    text-align: center;
+    font-size: 60px;
+    border-radius: 40px;
+    border-width: 0;
+    background-color: rgb(0, 0, 0, 0);
+    font-family: 'Press Start 2P', cursive;
+}
+
+.bt-roll:hover {
+    box-shadow: 0 10px 4px 0 rgba(0, 0, 0, 0.37);
+    cursor: pointer;
+}
+
+@media(min-width: 1390px){
+    .background-text {
+        top: 30vh;
+        left: 50vw;
+        font-size: 34vh;
+    }
+} 

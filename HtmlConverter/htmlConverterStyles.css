@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+.section1{
+    min-height: 100vh;
+}
+.converter-body {
+    background-color: #FAFAFA;
+    width: 80vw;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #777;
+    font-family: 'Roboto', arial, sans-serif;
+}
+
+/* Displaying HTML */
+.title-html {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Container */
+.converter-container {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+    border-radius: 3px;
+    padding: 5px 20px;
+    padding-bottom: 25px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* Text area */
+
+textarea{
+    width: 100%;
+     min-height: 100px;
+    height:  calc(50vh - 206px);;
+    resize: vertical; 
+}
+.input-code {
+    border: 1px solid #cccccc;
+    padding: 20px;
+}
+/* Text area */
+.output-entities {
+    padding: 20px;
+    background-color: #F5F5F5;
+    border: 1px solid #cccccc;
+}
+
+/*  Button */
+.btn {
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: #777;
+    font-size: 15px;
+    size: 36px;
+    margin-top: 5px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #555555;
+}
+
+
+
+/* Footer -----------*/
+.back-home {
+    /* background-color: #f5f1da; */
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.back-button {
+    border: 1px solid #dadce0;
+    background-color: transparent;
+    border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #777;
+    font-size: 15px;
+    padding: 3px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.back-button:hover {
+    box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.37);
+    cursor: pointer;
+}
