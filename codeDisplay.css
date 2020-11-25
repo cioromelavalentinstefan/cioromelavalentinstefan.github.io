@@ -50,3 +50,30 @@ pre{
     font-size: small;
     color: #565d47;
 }
+
+/* Footer -----------*/
+.back-home {
+    /* background-color: #f5f1da; */
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.back-button {
+    border: 1px solid #dadce0;
+    background-color: transparent;
+    border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #777;
+    font-size: 15px;
+    padding: 3px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.back-button:hover {
+    box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.37);
+    cursor: pointer;
+}
