@@ -42,7 +42,7 @@
 textarea{
     width: 100%;
      min-height: 100px;
-    height:  calc(50vh - 206px);;
+    height:  calc(50vh - 240px);;
     resize: vertical; 
 }
 .input-code {
